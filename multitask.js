@@ -3,7 +3,7 @@ const crypto = require('crypto')
 const fs = require('fs')
 
 const start = Date.now();
-
+process.env.UV_THREADPOOL_SIZE = 1;
 
 function doRequest() {
     https.request('https://www.google.com', res => {
@@ -27,7 +27,7 @@ fs.readFile('multitask.js', 'utf8', () => {
     console.log('FS:', Date.now() - start);
 });
 
-// doHash();
-// doHash();
-// doHash();
-// doHash();
+doHash();
+doHash();
+doHash();
+doHash();
