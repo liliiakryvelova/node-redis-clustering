@@ -32,9 +32,11 @@ The command `npm install -g pm2` is used to globally install the **PM2** process
 1. **Start an Application**  
    ```bash
    pm2 start app.js
-### View Running Applications
-   pm2 list
-### Restart Applications Automatically on System Reboot
-   pm2 startup
+2. **View Running Applications**
+    ```bash
+    pm2 list
+3. **Restart Applications Automatically on System Reboot**
+    ```bash
+    pm2 startup
 
 
