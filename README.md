@@ -40,3 +40,8 @@ The command `npm install -g pm2` is used to globally install the **PM2** process
     pm2 startup
 
 
+# Installing webworker
+    ```bash
+    npm install --save webworker-threads
+
+
